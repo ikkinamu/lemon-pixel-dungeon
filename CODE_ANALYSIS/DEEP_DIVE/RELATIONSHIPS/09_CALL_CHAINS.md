@@ -12,12 +12,12 @@ flowchart TD
   IOS["IOSLauncher.createApplication"] -->|생성| Shared
   Shared -->|INHERIT| Game["Game (SPD-classes)"]
   Game -->|장면 관리| Scene["Scene"]
-  Scene -->|INHERIT 관계 아님: 게임 장면의 상위 타입| PixelScene["PixelScene"]
-  PixelScene --> Title["TitleScene"]
-  PixelScene --> GameScene["GameScene"]
+  PixelScene["PixelScene"] -->|extends| Scene
+  Title["TitleScene"] -->|extends| PixelScene
+  GameScene["GameScene"] -->|extends| PixelScene
 ```
 
-도식의 `Scene → PixelScene`는 실제 **PixelScene extends Scene** 관계를 나타낸다. 나머지 `Game → Scene`는 장면 보유/전환 관계이며 상속이 아니다.
+도식의 `PixelScene → Scene`, `TitleScene/GameScene → PixelScene`는 **하위 클래스에서 상위 클래스로 향하는 extends 관계**다. `Game → Scene`는 장면 보유/전환 관계이며 상속이 아니다.
 
 - [DesktopLauncher.java L145–205](https://github.com/ikkinamu/lemon-pixel-dungeon/blob/bd3a990254e4249458816f4879e93ab87275555b/desktop/src/main/java/com/shatteredpixel/shatteredpixeldungeon/desktop/DesktopLauncher.java#L145-L205): `new Lwjgl3Application(new ShatteredPixelDungeon(new DesktopPlatformSupport()), config)`.
 - [AndroidLauncher.java L163–170](https://github.com/ikkinamu/lemon-pixel-dungeon/blob/bd3a990254e4249458816f4879e93ab87275555b/android/src/main/java/com/shatteredpixel/shatteredpixeldungeon/android/AndroidLauncher.java#L163-L170): `initialize(new ShatteredPixelDungeon(support), config)`.
