@@ -6,7 +6,7 @@
 
 | 문서 | 주요 내용 | 실제 읽은 파일 수 |
 |---|---|---:|
-| [01_LARGE_SYSTEMS.md](01_LARGE_SYSTEMS.md) | 대형 보스·복잡한 게임 시스템 | 14 |
+| [01_LARGE_SYSTEMS.md](01_LARGE_SYSTEMS.md) | 대형 보스·복잡한 게임 시스템 | 13 |
 | [02_MONSTER_CLASSES.md](02_MONSTER_CLASSES.md) | 일반 몬스터 종류와 AI | 16 |
 | [03_ITEMS_CONSUMABLES.md](03_ITEMS_CONSUMABLES.md) | 물약·주문서·장비·유물 | 16 |
 | [04_LEVEL_VARIANTS.md](04_LEVEL_VARIANTS.md) | 지역별 층 생성·방·함정 | 15 |
@@ -16,7 +16,7 @@
 | [08_BUFF_BLOBS_PLANTS.md](08_BUFF_BLOBS_PLANTS.md) | 상태 효과·환경 효과·식물 | 16 |
 | [09_MECHANICS_WORLD_RENDER.md](09_MECHANICS_WORLD_RENDER.md) | 지형·탄도·시각화 | 13 |
 
-문서별 읽기 횟수 합계 136건, 중복 파일 제거 후 **135개 고유 Java 파일**. **전체 Java 파일 1323개 중 약 10.2%**에 해당한다.
+문서별 읽기 횟수 합계 135건, 중복 파일 제거 후 **134개 고유 Java 파일**. **전체 Java 파일 1323개 중 약 10.1%**에 해당한다.
 
 ## 검증 상태 구분
 
