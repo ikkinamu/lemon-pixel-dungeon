@@ -1,5 +1,10 @@
 # 분석 문서 시작점
 
+## 전체 Java 소스 원문 분석 (신규)
+
+[25_FULL_SOURCE_ANALYSIS.md](25_FULL_SOURCE_ANALYSIS.md)에서 정적 분석 완료 범위와 확인되지 않은 의미를 구분한다. [COMPLETE_JAVA/00_README.md](COMPLETE_JAVA/00_README.md)에는 전체 1,323개 Java의 본문 기반 분석 문서 79개가 연결된다. 기존 시스템별 해설은 그보다 직접 확인한 실행 경로를 우선 제공한다.
+
+
 저장소: [ikkinamu/lemon-pixel-dungeon](https://github.com/ikkinamu/lemon-pixel-dungeon)  
 소스 분석 기준: bd3a990254e4249458816f4879e93ab87275555b  
 코드 수정: 없음. 이 폴더에 설명 Markdown만 추가.
